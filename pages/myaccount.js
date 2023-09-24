@@ -46,6 +46,7 @@ const MyAccount = ({addToCart,cart,subTotal,removeFromCart,user}) => {
     }
     if(userToken){
       setToken(userToken)
+      setemail(userToken.email)
       fetchdata()
     }
   }, [])
