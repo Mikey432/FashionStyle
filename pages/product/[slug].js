@@ -1,4 +1,4 @@
-import Product from '../models/Product'
+import Product from '../../models/Product'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from "react"
 import mongoose from "mongoose";

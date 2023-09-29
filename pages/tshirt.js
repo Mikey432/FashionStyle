@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import mongoose from "mongoose";
-import Product from './models/Product';
+import mongoose from 'mongoose';
+import Product from '../models/Product';
 
 const Tshirt = ({products}) => {
   return (
@@ -46,7 +46,7 @@ const Tshirt = ({products}) => {
 
 export async function getServerSideProps() {
   if (!mongoose.connections[0].readyState) {
-    await mongoose.connect(process.env.MONG_URL)
+    await mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true })
   }
   let products = await Product.find({category:"Tshirt"})
   let tshirt = {}
