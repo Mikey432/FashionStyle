@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import Order from './models/Order'
+import Order from '../models/Order'
 import mongoose from "mongoose";
+
 const MyOrder = ({cart,order}) => {
   console.log(order)
   return (

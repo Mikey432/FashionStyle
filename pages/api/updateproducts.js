@@ -1,5 +1,5 @@
-import connectDb from "../middlewear/mongoose.js"
-import Product from "../models/Product.js"
+import connectDb from "../../middlewear/mongoose.js"
+import Product from "../../models/Product.js"
 
 const handler = async (req, res) => {
     if (req.method == "POST") {

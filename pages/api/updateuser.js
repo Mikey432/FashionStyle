@@ -1,6 +1,6 @@
 var jwt = require('jsonwebtoken');
-import connectDb from "../middlewear/mongoose"
-import User from '../models/User'
+import connectDb from "../../middlewear/mongoose"
+import User from '../../models/User'
 
 const handler= async(req, res)=> {
     if(req.method=='POST'){

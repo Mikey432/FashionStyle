@@ -1,4 +1,4 @@
-import connectDb from "../middlewear/mongoose"
+import connectDb from "../../middlewear/mongoose"
 import Product from "../models/Product"
 
 const handler = async(req,res)=>{
