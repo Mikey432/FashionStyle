@@ -1,6 +1,6 @@
 import '../styles/globals.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/footer'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import LoadingBar from 'react-top-loading-bar'
